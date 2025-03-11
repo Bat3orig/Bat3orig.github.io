@@ -1,13 +1,40 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import SplitText from "../components/ui/SplitText";
 import Bio from "../components/bio.jsx";
-import Header from '@/components/Header.astro';
+import SplitText from '../components/ui/SplitText';
+import Education from "../components/education.astro";
+import WorkExperience from "../components/work.astro";
+import Contact from '@/components/contact.astro';
 ---
 
 <Layout>
-	<div class="font-mono max-w-3xl flex flex-col gap-5 ">
-		<Header/>
-		<Bio client:load text="As a Hardware and Software Engineer, I specializied in C, Javascript and Python. My development skills encompass desktop, web and backend applications, built with React, Next.js, Tkinter, Qt, Node.js and Flask. I am highly proficient in programming microcontrollers and microprocessors, seamlessly integrating them with electronic components to develop sophisticated systems. Driven by a passion for innovation, I create cutting-edge IoT systems by effectively bridging the gap between hardware and software."/>
+	<div class="font-mono max-w-3xl flex flex-col gap-5 lg:gap-10 py-2 lg:py-5">
+		<div class="flex flex-col gap-5">
+			<div class="h-12 flex items-center">
+			<SplitText client:load
+				text="Batzorig"
+				className="text-2xl text-center font-semibold"
+				delay={100}
+				animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+				animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+				easing="easeOutCubic"
+				threshold={0.2}
+				rootMargin="-50px"
+				onLetterAnimationComplete={() => {}}
+				/>
+			</div>
+			<Bio client:load text="As a Hardware and Software Engineer, I specializied in C, Javascript and Python. My development skills encompass desktop, web and backend applications, built with React, Next.js, Tkinter, Qt, Node.js and Flask. I am highly proficient in programming microcontrollers and microprocessors, seamlessly integrating them with electronic components to develop sophisticated systems. Driven by a passion for innovation, I create cutting-edge IoT systems by effectively bridging the gap between hardware and software."/>
+		</div>
+
+		<Education/>
+		<WorkExperience/>
+		<Contact style="fade"/>
 	</div>
+	<!-- <div class="h-[1px] w-screen bg-zinc-300 my-10"></div> -->
+	<!-- <div class="flex flex-row justify-center items-center gap-5">
+		<a href="https://www.linkedin.com/in/batzorig-bazarragchaa-68b56115a" target="_blank" class="underline text-zinc-600 hover:text-zinc-800 font-light underline-offset-3">Linkedin</a>
+		<a href="https://github.com/Bat3orig" target="_blank" class="underline text-zinc-600 hover:text-zinc-800 font-light underline-offset-3">Github</a>
+		<a href="https://www.facebook.com/batz0rig" target="_blank" class="underline text-zinc-600 hover:text-zinc-800 font-light underline-offset-3">Facebook</a>
+	</div> -->
+	
 </Layout>

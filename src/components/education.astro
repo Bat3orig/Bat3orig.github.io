@@ -1,0 +1,18 @@
+---
+import { educations } from "../lib/params";
+---
+
+<div class="flex flex-col gap-2">
+  <p class="text-lg" data-aos="slide-right">Education</p>
+  {educations.map((education) => (
+    <div class="border rounded-lg p-5 text-sm text-zinc-600" data-aos="fade" data-aos-duration="1000">
+      <p>{education.school}</p>
+      <ul class="list-disc list-inside mt-2">
+        <li>{education.year}</li>
+        <li>{education.occupation}</li>
+        <li>{education.level}</li>
+        <li>GPA: {education.degree}</li>
+      </ul>
+    </div>
+  ))}
+</div>

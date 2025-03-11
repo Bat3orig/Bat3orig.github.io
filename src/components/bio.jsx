@@ -7,12 +7,12 @@ export default function Bio({ text }) {
       blur={false}
       duration={1000}
       easing="ease-out"
-      delay={1000}
+      delay={1100}
       initialOpacity={0}
     >
-      <StarBorder as="button" color="red" speed="6s">
-        <p className="text-justify">{text}</p>
-      </StarBorder>
+      {/* <StarBorder as="button" color="red" speed="6s"> */}
+      <p className="text-justify text-zinc-600 text-sm">{text}</p>
+      {/* </StarBorder> */}
     </FadeContent>
   );
 }

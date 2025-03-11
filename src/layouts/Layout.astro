@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css"
+import 'aos/dist/aos.css';
 ---
 
 <!doctype html>
@@ -11,19 +12,27 @@ import "../styles/global.css"
 		<meta name="generator" content={Astro.generator} />
 		<title>Batzorig</title>
 	</head>
-	<body>
+	<body class="w-screen flex flex-col items-center bg-zinc-100 pb-[50px]">
 		<slot />
+		<script>
+			import { easings } from "@react-spring/web";
+import AOS from "aos";
+			AOS.init({
+				easing: 'ease-in-out'
+			});
+		</script>
 	</body>
 </html>
 
-<style>
+<!-- <style>
 	html,
 	body {
 		margin: 0;
 		width: 100%;
-		height: 100%;
+		padding-bottom: 50px;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
-		background-color: #fefefe;
+		background-color: #f4f4f5;
 	}
-</style>
+</style> -->
