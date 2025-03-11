@@ -4,9 +4,9 @@ import SplitText from "./ui/SplitText"
 import StarBorder from "./ui/StarBorder"
 ---
 
-<div id="container">
+<div class="font-mono h-full">
     <img class="fixed top-0 left-0 w-screen h-screen -z-50 blur-[100px]" src={background.src} alt="" fetchpriority="high"/>
-    <main class="h-screen flex items-center justify-center">
+    <main class="h-full w-full flex items-center justify-center">
 		<SplitText client:load text="Hello Batzorig!" className="text-2xl text-center font-mono"
         delay={100}
         animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}

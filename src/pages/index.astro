@@ -2,19 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import SplitText from "../components/ui/SplitText";
 import Bio from "../components/bio.jsx";
+import Header from '@/components/Header.astro';
 ---
 
 <Layout>
 	<div class="font-mono max-w-3xl flex flex-col gap-5 ">
-		<SplitText client:load text="I'm Batzorig!" className="text-2xl text-center font-mono"
-			delay={100}
-			animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-			animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-			easing="easeOutCubic"
-			threshold={0.2}
-			rootMargin="-50px"
-			onLetterAnimationComplete={() => {}}/>
-			<p>asdass</p>
+		<Header/>
 		<Bio client:load text="As a Hardware and Software Engineer, I specializied in C, Javascript and Python. My development skills encompass desktop, web and backend applications, built with React, Next.js, Tkinter, Qt, Node.js and Flask. I am highly proficient in programming microcontrollers and microprocessors, seamlessly integrating them with electronic components to develop sophisticated systems. Driven by a passion for innovation, I create cutting-edge IoT systems by effectively bridging the gap between hardware and software."/>
 	</div>
 </Layout>
