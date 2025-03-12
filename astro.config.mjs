@@ -9,8 +9,8 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: "https://Bat3orig.github.io", // Correct site URL
-  base: "/", // Since your repo is named `Bat3orig.github.io`, the base should be `/`
+  // site: "https://Bat3orig.github.io", // Correct site URL
+  // base: "/", // Since your repo is named `Bat3orig.github.io`, the base should be `/`
   integrations: [react(), icon()],
   i18n: {
     locales: ["en", "mn"],
