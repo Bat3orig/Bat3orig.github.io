@@ -1,41 +1,20 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import background from "../../assets/background.svg"
-import SplitText from '../../components/ui/SplitText';
-import StarBorder from '../../components/ui/StarBorder';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Bio from "../../components/bio.jsx";
+import Education from "../../components/education.astro";
+import WorkExperience from "../../components/work.astro";
+import Contact from '../../components/contact.astro';
+import Profile from "../../components/profile.astro";
+import {educations, profile, works, bio} from "../../lib/params.js";
 ---
-<Layout>
-	<div id="container">
-		<img class="fixed top-0 left-0 w-screen h-screen -z-50 blur-[100px]" src={background.src} alt="" fetchpriority="high"/>
-		<main class="h-screen flex items-center justify-center">
-			<SplitText client:load text="Сайн уу Батзориг!" className="text-2xl text-center font-mono"
-			delay={50}
-			animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-			animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-			easing="easeOutCubic"
-			threshold={0.2}
-			rootMargin="-50px"
-			onLetterAnimationComplete={() => {}}/>
-        
-  
-		<StarBorder client:load
-		as="button"
-		color="red"
-		speed="3s"
-		onClick={() => console.log("haha")}
-		>
-		Hello
-		</StarBorder>
-	</main>
-</div>
-</Layout>
 
-<style>
-    #container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-		height: 100%;
-	}
-</style>
+<Layout>
+	<div class="font-mono max-w-3xl flex flex-col gap-5 lg:gap-10 py-2 px-5 lg:py-5 mt-5 lg:mt-0">	
+		<Profile profile={profile.mn}/>
+		<Bio client:load text={bio.mn}/>
+		<Education title="Боловсрол" educations={educations.mn}/>
+		<WorkExperience title="Ажлын туршлага" works={works.mn}/>
+		<Contact title="Холбоо барих"/>
+	</div>
+	
+</Layout>

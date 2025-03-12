@@ -1,18 +1,14 @@
-import FadeContent from "./ui/FadeContent";
-import StarBorder from "./ui/StarBorder";
+import { motion } from "motion/react";
 
 export default function Bio({ text }) {
   return (
-    <FadeContent
-      blur={false}
-      duration={1000}
-      easing="ease-out"
-      delay={1100}
-      initialOpacity={0}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5, ease: "easeInOut", delay: 1 }}
+      className="w-full"
     >
-      {/* <StarBorder as="button" color="red" speed="6s"> */}
       <p className="text-justify text-zinc-600 text-sm">{text}</p>
-      {/* </StarBorder> */}
-    </FadeContent>
+    </motion.div>
   );
 }

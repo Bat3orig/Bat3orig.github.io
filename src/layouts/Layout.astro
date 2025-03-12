@@ -11,15 +11,26 @@ import 'aos/dist/aos.css';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Batzorig</title>
+		<!-- <title>{locale == 'mn' ? "Батзориг" : "Batzorig"}</title> -->
 	</head>
 	<body class="w-screen flex flex-col items-center bg-zinc-100 pb-[50px]">
+		<div class="relative w-full max-w-3xl">
+			<nav class="absolute top-2 lg:top-5 right-2 lg:right-5 flex flex-row items-center h-4 gap-2">
+				<a href="/">English</a>
+				<div class="w-[1px] h-full bg-zinc-500"></div>
+				  <a href="/mn">Монгол</a>
+			</nav>
+		</div>
 		<slot />
 		<script>
-			import { easings } from "@react-spring/web";
-import AOS from "aos";
-			AOS.init({
-				easing: 'ease-in-out'
-			});
+			import AOS from "aos";
+
+			setTimeout(() => {
+				AOS.init({
+				easing: 'ease-in-out',
+				once: true
+				});
+	        }, 3000);
 		</script>
 	</body>
 </html>

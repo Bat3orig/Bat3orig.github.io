@@ -1,0 +1,44 @@
+---
+import {Icon} from "astro-icon/components";
+import profileImage from "../assets/profile.jpg";
+import SplitText from "../components/splitText";
+import {motion} from "motion/react";
+const {profile} = Astro.props
+---
+
+<div class="w-full flex flex-row gap-2 lg:gap-5">
+    <img src={profileImage.src} alt="profile-image" class="w-[120px] md:w-[140px] lg:w-[160px] h-[160px] md:h-[180px] lg:h-[200px] fade-image-in z-50"/>
+    <div class="flex flex-col gap-2 text-zinc-700">
+        <SplitText client:load text={profile?.name} style="text-2xl font-semibold" delay_divider={20}/>
+        <motion.div client:load className="flex flex-col gap-2 z-10" initial={{opacity: 0, x: -150}} animate={{opacity: 1, x: 0}} transition={{duration: 1, ease: 'easeInOut', delay: 0.5}}>
+            <div class="flex flex-row items-center gap-5">
+                <Icon name="mdi:phone" class="text-xl"/>
+                <p>{profile?.phone}</p>
+            </div>
+            <div class="flex flex-row items-center gap-5">
+                <Icon name="mdi:email" class="text-xl"/>
+                <p>{profile?.email}</p>
+            </div>
+            <div class="flex flex-row items-center gap-5">
+                <Icon name="mdi:linkedin" class="text-xl"/>
+                <a href={profile?.linkedin} target="_blank" class="underline text-zinc-600 hover:text-zinc-800 font-light underline-offset-3">Linkedin</a>
+            </div>
+            
+            <div class="flex flex-row items-center gap-5">
+                <Icon name="mdi:github" class="text-xl"/>
+                <a href={profile?.github} target="_blank" class="underline text-zinc-600 hover:text-zinc-800 font-light underline-offset-3">Github</a>
+            </div>
+        </motion.div>
+    </div>
+</div>
+
+<style>
+    .fade-image-in {
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+</style>
