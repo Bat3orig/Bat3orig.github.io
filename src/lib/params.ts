@@ -175,14 +175,14 @@ export const works: { en: TWork[]; mn: TWork[] } = {
         {
           name: "Төмөр замын хяналтын систем зохион бүтээсэн",
           link: {
-            href: "https://www.incon.mnproduct/1",
+            href: "https://www.incon.mn/product/1",
             text: "Дэлгэрэнгүй",
           },
         },
         {
           name: "Төмөр замын хаалтгүй гармын төлөвийг зүтгүүр дотроос урьдчилан харах, газрын зурагт суурилсан хяналтын систем зохион бүтээсэн",
           link: {
-            href: "https://www.incon.mnproduct/2",
+            href: "https://www.incon.mn/product/2",
             text: "Дэлгэрэнгүй",
           },
         },
