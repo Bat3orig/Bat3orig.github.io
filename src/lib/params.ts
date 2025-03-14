@@ -82,21 +82,21 @@ export const works: { en: TWork[]; mn: TWork[] } = {
         {
           name: "invented Railway monitor system",
           link: {
-            href: "https://incon-website-two.vercel.app/product/1",
+            href: "https://www.incon.mn/product/1",
             text: "See more",
           },
         },
         {
           name: "invented and develop Railway Crossing monitor system",
           link: {
-            href: "https://incon-website-two.vercel.app/product/2",
+            href: "https://www.incon.mn/product/2",
             text: "See more",
           },
         },
         {
           name: "invented Train Approach Alert device",
           link: {
-            href: "https://incon-website-two.vercel.app/product/3",
+            href: "https://www.incon.mn/product/3",
             text: "See more",
           },
         },
@@ -111,7 +111,7 @@ export const works: { en: TWork[]; mn: TWork[] } = {
         {
           name: "develop company website",
           link: {
-            href: "http://incon-website-two.vercel.app",
+            href: "https://www.incon.mn",
             text: "See more",
           },
         },
@@ -175,21 +175,21 @@ export const works: { en: TWork[]; mn: TWork[] } = {
         {
           name: "Төмөр замын хяналтын систем зохион бүтээсэн",
           link: {
-            href: "https://incon-website-two.vercel.app/product/1",
+            href: "https://www.incon.mnproduct/1",
             text: "Дэлгэрэнгүй",
           },
         },
         {
           name: "Төмөр замын хаалтгүй гармын төлөвийг зүтгүүр дотроос урьдчилан харах, газрын зурагт суурилсан хяналтын систем зохион бүтээсэн",
           link: {
-            href: "https://incon-website-two.vercel.app/product/2",
+            href: "https://www.incon.mnproduct/2",
             text: "Дэлгэрэнгүй",
           },
         },
         {
           name: "Зам төмөр дээр ажиллаж байгаа ажилчдад галт тэрэг ирж буйг мэдээлэх жижиг зөөврийн төхөөрөмж зохион бүтээсэн",
           link: {
-            href: "https://incon-website-two.vercel.app/product/3",
+            href: "https://www.incon.mn/product/3",
             text: "Дэлгэрэнгүй",
           },
         },
@@ -204,7 +204,7 @@ export const works: { en: TWork[]; mn: TWork[] } = {
         {
           name: "Компанийн веб сайт",
           link: {
-            href: "http://incon-website-two.vercel.app",
+            href: "https://www.incon.mn",
             text: "Дэлгэрэнгүй",
           },
         },
