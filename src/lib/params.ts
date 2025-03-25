@@ -77,7 +77,7 @@ export const works: { en: TWork[]; mn: TWork[] } = {
     {
       company: "Incon LLC",
       year: "2023 - Present",
-      occupation: "Research and Development engineer",
+      occupation: "R&D and software engineer",
       details: [
         {
           name: "invented Railway monitor system",
@@ -170,7 +170,7 @@ export const works: { en: TWork[]; mn: TWork[] } = {
     {
       company: "Инкон ХХК",
       year: "2023 - Одоо",
-      occupation: "Судалгаа хөгжүүлэлтийн инженер",
+      occupation: "Бүтээгдэхүүн хөгжүүлэлт, програм хангамжийн инженер",
       details: [
         {
           name: "Төмөр замын хяналтын систем зохион бүтээсэн",
