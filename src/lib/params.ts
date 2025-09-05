@@ -66,7 +66,7 @@ export const works: { en: TWork[]; mn: TWork[] } = {
       occupation: "Software engineer",
       details: [
         {
-          name: "developed e-sign register and monitoring application (fullstack)",
+          name: "developed e-sign register and monitoring application (React + Express + MySQL)",
           link: {
             href: "https://register.tridumkey.mn",
             text: "link",
@@ -80,43 +80,43 @@ export const works: { en: TWork[]; mn: TWork[] } = {
       occupation: "R&D and software engineer",
       details: [
         {
-          name: "invented Railway monitor system",
+          name: "invented Railway monitor system. (React, AWS Amplify + AWS IoT LoRawan, devices based on stm32 with multiple sensors)",
           link: {
             href: "https://www.incon.mn/product/1",
             text: "See more",
           },
         },
         {
-          name: "invented and develop Railway Crossing monitor system",
+          name: "invented and develop Railway Crossing monitor system (Radar + Camera + beaglebone + LoRa, Raspberry pi + Monitor + LoRa + GPS)",
           link: {
             href: "https://www.incon.mn/product/2",
             text: "See more",
           },
         },
         {
-          name: "invented Train Approach Alert device",
+          name: "invented Train Approach Alert device (STM32 + LoRa + Speaker + Vibrator + EPaper display + battery)",
           link: {
             href: "https://www.incon.mn/product/3",
             text: "See more",
           },
         },
         {
-          name: "invented Auto Rail Light device",
+          name: "invented Auto Rail Light device (Joystick + beaglebone + Stepper motor + Light)",
           link: null,
         },
         {
-          name: "research and develop Smart Chock system",
+          name: "research and develop Smart Chock system (RTK GPS + GPS)",
           link: null,
         },
         {
-          name: "develop company website",
+          name: "develop company website (Nextjs)",
           link: {
             href: "https://www.incon.mn",
             text: "See more",
           },
         },
         {
-          name: "develop Time Attendance and Lunch registration",
+          name: "developed Time Attendance and Lunch registration system based on mobile and register device. (React native, Nextjs + prisma + Postgress, Rasperry pi + camera + Monitor)",
           link: null,
         },
       ],
@@ -159,7 +159,7 @@ export const works: { en: TWork[]; mn: TWork[] } = {
       occupation: "Программ хангамжийн инженер",
       details: [
         {
-          name: "Тоон гарын үсгийн бүртгэлийн программ хөгжүүлсэн",
+          name: "Тоон гарын үсгийн бүртгэлийн программ хөгжүүлсэн (React + Express + MySQL)",
           link: {
             href: "https://register.tridumkey.mn",
             text: "линк",
@@ -173,43 +173,43 @@ export const works: { en: TWork[]; mn: TWork[] } = {
       occupation: "Бүтээгдэхүүн хөгжүүлэлт, програм хангамжийн инженер",
       details: [
         {
-          name: "Төмөр замын хяналтын систем зохион бүтээсэн",
+          name: "Төмөр замын хяналтын систем зохион бүтээсэн. (React, AWS Amplify + AWS IoT LoRaWAN, STM32 + LoRaWAN + sensors)",
           link: {
             href: "https://www.incon.mn/product/1",
             text: "Дэлгэрэнгүй",
           },
         },
         {
-          name: "Төмөр замын хаалтгүй гармын төлөвийг зүтгүүр дотроос урьдчилан харах, газрын зурагт суурилсан хяналтын систем зохион бүтээсэн",
+          name: "Төмөр замын хаалтгүй гармын төлөвийг зүтгүүр дотроос урьдчилан харах, газрын зурагт суурилсан хяналтын систем зохион бүтээсэн. (Радар + Камер + beaglebone + LoRa, Raspberry pi + Дэлгэц + LoRa + GPS)",
           link: {
             href: "https://www.incon.mn/product/2",
             text: "Дэлгэрэнгүй",
           },
         },
         {
-          name: "Зам төмөр дээр ажиллаж байгаа ажилчдад галт тэрэг ирж буйг мэдээлэх жижиг зөөврийн төхөөрөмж зохион бүтээсэн",
+          name: "Зам төмөр дээр ажиллаж байгаа ажилчдад галт тэрэг ирж буйг мэдээлэх жижиг зөөврийн төхөөрөмж зохион бүтээсэн. (STM32 + LoRa + EPaper display + Speaker + Vibrator)",
           link: {
             href: "https://www.incon.mn/product/3",
             text: "Дэлгэрэнгүй",
           },
         },
         {
-          name: "Төмөр замын муруйг гар удирдлагаар эсвэл автоматаар дагаж эргэдэг 1км - ийн тусгалтай зүтгүүрийн гэрлийн удирдлагын төхөөрөмж зохион бүтээсэн",
+          name: "Төмөр замын муруйг гар удирдлагаар эсвэл автоматаар дагаж эргэдэг 1км - ийн тусгалтай зүтгүүрийн гэрлийн удирдлагын төхөөрөмж зохион бүтээсэн. (Joystick + beaglebone + Stepper motor + Light)",
           link: null,
         },
         {
-          name: "Төмөр замын ухаалаг эвүүрийн судалгаа болон хөгжүүлэлт",
+          name: "Төмөр замын ухаалаг эвүүрийн судалгаа болон хөгжүүлэлт. (RTK GPS)",
           link: null,
         },
         {
-          name: "Компанийн веб сайт",
+          name: "Компанийн веб сайт. (Nextjs)",
           link: {
             href: "https://www.incon.mn",
             text: "Дэлгэрэнгүй",
           },
         },
         {
-          name: "Гар утсанд суурилсан компанийн ажилчдын цаг бүртгэл, үдийн хоолны бүртгэлийн системийн хөгжүүлэлт",
+          name: "Гар утсанд суурилсан компанийн ажилчдын цаг бүртгэл, үдийн хоолны бүртгэлийн системийн хөгжүүлэлсэн. (React native, Nextjs + prisma + Postgress, Rasperry pi + camera + Monitor)",
           link: null,
         },
       ],
